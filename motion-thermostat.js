@@ -1,3 +1,16 @@
+/*
+    motion-thermostat.js
+    2021. Matthew Dunlap.
+
+    This node script serves as the server for the motion thermostat. Run the server in the background
+    in order to have it connect to IFTTT and turn the device on and off once a temperature threshold has
+    reached. The temperature threshold may be changed in the global vars section below. The default is
+    se to 23.9 C.
+
+    Before execution, two environment variables must be set! See the error message below for more information.
+    Also, if you wish to see every BLE advertisement that the puck sends, append '--verbose' after the script
+    when calling from node.
+ */
 const https = require('https');
 const noble = require("@abandonware/noble");
 
