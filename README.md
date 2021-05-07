@@ -8,6 +8,8 @@ originally started this project in order to control a vent fan that is plugged i
 IoT plug.
 
 ## Setup
+0) On the IFTTT website, setup two [Web Hooks](https://ifttt.com/maker_webhooks) with the event names: 'puck_on' and
+   'puck_off'.
 1) Using the [Espruino web IDE](https://chrome.google.com/webstore/detail/espruino-web-ide/bleoifhkdalbjfbobjackfdifdneehpo), 
    flash the code found in 'espruino-puck-code.js' to the Puck.
 2) Clone this repository on your choice of server. I opted to use a Raspberry Pi 4 running Ubuntu 20.04.

@@ -68,14 +68,14 @@ const switchFan = function(state){
     const fanOn = {
         hostname: 'maker.ifttt.com',
         port: 443,
-        path: `/trigger/kitchen_fan_on/with/key/${iftttApiKey}`,
+        path: `/trigger/puck_on/with/key/${iftttApiKey}`,
         method: 'GET'
     }
 
     const fanOff = {
         hostname: 'maker.ifttt.com',
         port: 443,
-        path: `/trigger/kitchen_fan_off/with/key/${iftttApiKey}`,
+        path: `/trigger/puck_off/with/key/${iftttApiKey}`,
         method: 'GET'
     }
 
