@@ -31,6 +31,17 @@ $ export PUCK_ADDRESS=xx:xx:xx:xx:xx:xx && export IFTTT_API_KEY=xxxxxxxxxxxxxxxx
 ```
 $ node motion-temperature --verbose
 ```
+If the output looks like this, you were successful:
+```
+[2021-04-05 06:21:14] - battery: 2.8v, fanOn?: false, temp: 20.8
+```
+
+After testing, the script may run like a service using 
+[systemd unit files](https://www.suse.com/support/kb/doc/?id=000019672), 
+[launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html), 
+[node-windows](https://github.com/coreybutler/node-windows), etc. 
+Make sure to leave out the `--verbose` flag to reduce the amount of chatter in your log files. 
+
 
 
  
